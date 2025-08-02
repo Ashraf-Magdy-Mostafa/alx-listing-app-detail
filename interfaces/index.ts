@@ -10,15 +10,22 @@ export interface ButtonProps {
   onClick: () => void;
   variant?: 'primary' | 'secondary';
 }
-
+export interface Review {
+  name: string;
+  avatar: string;
+  rating: number; // from 1 to 5
+  comment: string;
+  date?: string;
+}
 export interface PropertyProps {
   name: string,
+  description: string,
   address: {
     state: string,
     city: string,
     country: string
   },
-  rating: number,
+  reviews?: Review[],
   category: string[],
   price: number
   offers: {

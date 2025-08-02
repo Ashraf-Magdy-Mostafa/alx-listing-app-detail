@@ -1,6 +1,4 @@
-import { PropertyProps } from "@/interfaces/index";
-export const APP_NAME = 'ALX Listing App';
-export const PLACEHOLDER_IMAGE = '/assets/Picture.jpg';
+import { PropertyProps } from "@/interfaces";
 
 export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     {
@@ -8,359 +6,151 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
         address: {
             state: "Seminyak",
             city: "Bali",
-            country: "Indonesia"
+            country: "Indonesia",
         },
-        rating: 4.89,
+
         category: ["Luxury Villa", "Pool", "Free Parking"],
         price: 3200,
         offers: {
             bed: "3",
             shower: "3",
-            occupants: "4-6"
+            occupants: "4-6",
         },
         image: "https://placehold.co/600x400",
-        discount: ""
+        discount: "",
+        description:
+            "A luxurious villa nestled in Seminyak, Bali, offering tranquil ocean breezes, a private pool, and top-tier comfort.",
+        reviews: [
+            {
+                name: "Emma Stone",
+                avatar: "https://placehold.co/48x48?text=E",
+                rating: 5,
+                comment: "Absolutely stunning villa. The pool and view were amazing!",
+            },
+            {
+                name: "Liam Chen",
+                avatar: "https://placehold.co/48x48?text=L",
+                rating: 4,
+                comment: "Very clean and peaceful, but a bit far from restaurants.",
+            },
+        ],
     },
     {
         name: "Mountain Escape Chalet",
         address: {
             state: "Aspen",
             city: "Colorado",
-            country: "USA"
+            country: "USA",
         },
-        rating: 4.70,
+
         category: ["Mountain View", "Fireplace", "Self Checkin"],
         price: 1800,
         offers: {
             bed: "4",
             shower: "2",
-            occupants: "5-7"
+            occupants: "5-7",
         },
         image: "https://placehold.co/600x400",
-        discount: "30"
+        discount: "30",
+        description:
+            "Experience cozy mountain living with scenic views and rustic charm in the heart of Aspen.",
+        reviews: [
+            {
+                name: "Olivia Garcia",
+                avatar: "https://placehold.co/48x48?text=O",
+                rating: 5,
+                comment: "Perfect winter getaway. Loved the fireplace and snowy views.",
+            },
+        ],
     },
     {
         name: "Cozy Desert Retreat",
         address: {
             state: "Palm Springs",
             city: "California",
-            country: "USA"
+            country: "USA",
         },
-        rating: 4.92,
+
         category: ["Desert View", "Pet Friendly", "Self Checkin"],
         price: 1500,
         offers: {
             bed: "2",
             shower: "1",
-            occupants: "2-3"
+            occupants: "2-3",
         },
         image: "https://placehold.co/600x400",
-        discount: ""
+        discount: "",
+        description:
+            "A stylish hideaway in the desert, perfect for couples or solo travelers seeking peace and pet-friendly accommodation.",
+        reviews: [
+            {
+                name: "Daniel Kim",
+                avatar: "https://placehold.co/48x48?text=D",
+                rating: 4,
+                comment: "Great location and cozy interior. Loved traveling with my dog!",
+            },
+        ],
     },
     {
         name: "City Lights Penthouse",
         address: {
             state: "New York",
             city: "New York",
-            country: "USA"
+            country: "USA",
         },
-        rating: 4.85,
+
         category: ["City View", "Free WiFi", "24h Checkin"],
         price: 4500,
         offers: {
             bed: "2",
             shower: "2",
-            occupants: "2-4"
+            occupants: "2-4",
         },
         image: "https://placehold.co/600x400",
-        discount: "15"
+        discount: "15",
+        description:
+            "Elevate your stay in a modern penthouse overlooking the dazzling skyline of New York City.",
+        reviews: [
+            {
+                name: "Sophia Lin",
+                avatar: "https://placehold.co/48x48?text=S",
+                rating: 5,
+                comment: "Incredible view! Worth every penny for the night skyline alone.",
+            },
+        ],
     },
     {
         name: "Riverside Cabin",
         address: {
             state: "Queenstown",
             city: "Otago",
-            country: "New Zealand"
+            country: "New Zealand",
         },
-        rating: 4.77,
+
         category: ["Riverside", "Private Dock", "Free Kayaks"],
         price: 2800,
         offers: {
             bed: "3",
             shower: "2",
-            occupants: "4-6"
+            occupants: "4-6",
         },
         image: "https://placehold.co/600x400",
-        discount: "20"
+        discount: "20",
+        description:
+            "Relax by the river in this cozy cabin with its own dock and free kayak access for outdoor adventure.",
+        reviews: [
+            {
+                name: "Alex Rivera",
+                avatar: "https://placehold.co/48x48?text=A",
+                rating: 5,
+                comment: "Kayaking every morning was the highlight of our trip!",
+            },
+            {
+                name: "Jasmine Patel",
+                avatar: "https://placehold.co/48x48?text=J",
+                rating: 4,
+                comment: "Beautiful spot, but bring bug spray for the riverside!",
+            },
+        ],
     },
-    {
-        name: "Modern Beachfront Villa",
-        address: {
-            state: "Sidemen",
-            city: "Bali",
-            country: "Indonesia"
-        },
-        rating: 4.95,
-        category: ["Beachfront", "Private Pool", "Chef Service"],
-        price: 5000,
-        offers: {
-            bed: "5",
-            shower: "4",
-            occupants: "8-10"
-        },
-        image: "https://placehold.co/600x400",
-        discount: ""
-    },
-    {
-        name: "Lakeside Chalet",
-        address: {
-            state: "Banff",
-            city: "Alberta",
-            country: "Canada"
-        },
-        rating: 4.65,
-        category: ["Lakeside", "Mountain View", "Hiking Trails"],
-        price: 2300,
-        offers: {
-            bed: "3",
-            shower: "3",
-            occupants: "4-5"
-        },
-        image: "https://placehold.co/600x400",
-        discount: "10"
-    },
-    {
-        name: "Tropical Garden Villa",
-        address: {
-            state: "Koh Samui",
-            city: "Surat Thani",
-            country: "Thailand"
-        },
-        rating: 4.80,
-        category: ["Garden", "Free Parking", "Self Checkin"],
-        price: 2750,
-        offers: {
-            bed: "3",
-            shower: "3",
-            occupants: "5-6"
-        },
-        image: "https://placehold.co/600x400",
-        discount: "25"
-    },
-    {
-        name: "Urban Loft",
-        address: {
-            state: "Berlin",
-            city: "Berlin",
-            country: "Germany"
-        },
-        rating: 4.60,
-        category: ["City Center", "Free WiFi", "24h Checkin"],
-        price: 2000,
-        offers: {
-            bed: "2",
-            shower: "1",
-            occupants: "2-3"
-        },
-        image: "https://placehold.co/600x400",
-        discount: ""
-    },
-    {
-        name: "Secluded Forest Cabin",
-        address: {
-            state: "Whistler",
-            city: "British Columbia",
-            country: "Canada"
-        },
-        rating: 4.72,
-        category: ["Secluded", "Hot Tub", "Self Checkin"],
-        price: 2600,
-        offers: {
-            bed: "4",
-            shower: "2",
-            occupants: "5-7"
-        },
-        image: "https://placehold.co/600x400",
-        discount: "40"
-    },
-    {
-        name: "Cliffside Villa",
-        address: {
-            state: "Amalfi",
-            city: "Salerno",
-            country: "Italy"
-        },
-        rating: 4.93,
-        category: ["Cliffside", "Infinity Pool", "Sea View"],
-        price: 6000,
-        offers: {
-            bed: "4",
-            shower: "4",
-            occupants: "6-8"
-        },
-        image: "https://placehold.co/600x400",
-        discount: "50"
-    },
-    {
-        name: "Coastal Escape Villa",
-        address: {
-            state: "Noosa",
-            city: "Queensland",
-            country: "Australia"
-        },
-        rating: 4.83,
-        category: ["Beachfront", "Pet Friendly", "Free Parking"],
-        price: 3400,
-        offers: {
-            bed: "3",
-            shower: "3",
-            occupants: "4-6"
-        },
-        image: "https://placehold.co/600x400",
-        discount: ""
-    },
-    {
-        name: "Historical Villa",
-        address: {
-            state: "Florence",
-            city: "Tuscany",
-            country: "Italy"
-        },
-        rating: 4.67,
-        category: ["Historical", "Free Breakfast", "Self Checkin"],
-        price: 2700,
-        offers: {
-            bed: "2",
-            shower: "2",
-            occupants: "2-4"
-        },
-        image: "https://placehold.co/600x400",
-        discount: "35"
-    },
-    {
-        name: "Downtown Apartment",
-        address: {
-            state: "Tokyo",
-            city: "Tokyo",
-            country: "Japan"
-        },
-        rating: 4.81,
-        category: ["City Center", "Free WiFi", "Public Transport"],
-        price: 2200,
-        offers: {
-            bed: "1",
-            shower: "1",
-            occupants: "2"
-        },
-        image: "https://placehold.co/600x400",
-        discount: ""
-    },
-    {
-        name: "Luxury Safari Lodge",
-        address: {
-            state: "Serengeti",
-            city: "Mara",
-            country: "Tanzania"
-        },
-        rating: 4.97,
-        category: ["Safari", "Guided Tours", "Free Breakfast"],
-        price: 4500,
-        offers: {
-            bed: "4",
-            shower: "4",
-            occupants: "6-8"
-        },
-        image: "https://placehold.co/600x400",
-        discount: "20"
-    },
-    {
-        name: "Countryside Cottage",
-        address: {
-            state: "Cotswolds",
-            city: "Gloucestershire",
-            country: "UK"
-        },
-        rating: 4.58,
-        category: ["Countryside", "Fireplace", "Self Checkin"],
-        price: 1800,
-        offers: {
-            bed: "2",
-            shower: "1",
-            occupants: "2-4"
-        },
-        image: "https://placehold.co/600x400",
-        discount: "25"
-    },
-    {
-        name: "Riverfront Mansion",
-        address: {
-            state: "Paris",
-            city: "Île-de-France",
-            country: "France"
-        },
-        rating: 4.86,
-        category: ["Riverfront", "Private Garden", "Self Checkin"],
-        price: 5000,
-        offers: {
-            bed: "4",
-            shower: "3",
-            occupants: "6-8"
-        },
-        image: "https://placehold.co/600x400",
-        discount: "30"
-    },
-    {
-        name: "Ski Chalet",
-        address: {
-            state: "Zermatt",
-            city: "Valais",
-            country: "Switzerland"
-        },
-        rating: 4.75,
-        category: ["Mountain View", "Ski Access", "Fireplace"],
-        price: 3900,
-        offers: {
-            bed: "3",
-            shower: "3",
-            occupants: "4-5"
-        },
-        image: "https://placehold.co/600x400",
-        discount: ""
-    },
-    {
-        name: "Island Paradise Villa",
-        address: {
-            state: "Mahe",
-            city: "Victoria",
-            country: "Seychelles"
-        },
-        rating: 4.98,
-        category: ["Beachfront", "Private Pool", "Chef Service"],
-        price: 6500,
-        offers: {
-            bed: "5",
-            shower: "5",
-            occupants: "8-10"
-        },
-        image: "https://placehold.co/600x400",
-        discount: "60"
-    },
-    {
-        name: "Clifftop Retreat",
-        address: {
-            state: "Cape Town",
-            city: "Western Cape",
-            country: "South Africa"
-        },
-        rating: 4.78,
-        category: ["Ocean View", "Private Pool", "Self Checkin"],
-        price: 4100,
-        offers: {
-            bed: "3",
-            shower: "3",
-            occupants: "4-5"
-        },
-        image: "https://placehold.co/600x400",
-        discount: ""
-    }
 ];
